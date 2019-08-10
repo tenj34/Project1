@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        title = selectedImage
         super.viewDidLoad()
         if let imageToLoad = selectedImage{
             imageView.image = UIImage(named: imageToLoad)
